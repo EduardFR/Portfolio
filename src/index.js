@@ -1,17 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import "./fonts/static/SpaceGrotesk-Bold.ttf";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { createGlobalStyle } from "styled-components";
+
+const Global = createGlobalStyle`
+h1{
+  color: white;
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+}
+
+h2{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+
+}
+
+h3{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px; 
+}
+
+p{
+  color: gray;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "SpaceGrotesk";
+  background-color: black;
+}
+`;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
+    <Global />
     <App />
-  </React.StrictMode>
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
