@@ -7,7 +7,6 @@ const ContactContainerStyle = styled.div`
   justify-content: space-between;
   padding-bottom: 92px;
   margin-bottom: 42px;
-
   border-bottom: 1px solid var(--color-White);
 `;
 

@@ -5,8 +5,6 @@ const NavigationStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 127px;
-  padding-top: 39px;
 `;
 
 const MyNameStyle = styled.h3`
