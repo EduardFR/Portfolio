@@ -7,8 +7,16 @@ import "./fonts/static/SpaceGrotesk-Bold.ttf";
 import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
+:root {
+  --color-Black: #151515;
+  --color-White: #FFFFFF;
+  --color-Green: #4ee1a0;
+  --color-DarkGray: #242424;
+  --color-Gray: #d9d9d9;
+}
+
 h1{
-  color: white;
+  color: var(--color-White);
   font-size: 88px;
   line-height: 88px;
   font-weight: 700;
@@ -16,7 +24,7 @@ h1{
 }
 
 h2{
-  color: white;
+  color: var(--color-White);
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -25,14 +33,14 @@ h2{
 }
 
 h3{
-  color: white;
+  color: var(--color-White);
   font-size: 24px;
   font-weight: 700;
   line-height: 32px; 
 }
 
 p{
-  color: gray;
+  color: var(--color-Gray);
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
@@ -42,7 +50,10 @@ p{
   margin: 0;
   padding: 0;
   font-family: "SpaceGrotesk";
-  background-color: black;
+}
+
+body {
+  background-color: var(--color-Black);
 }
 `;
 

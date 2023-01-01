@@ -3,7 +3,7 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
-const AppWrapper = styled.p`
+const AppWrapper = styled.div`
   text-align: center;
 `;
 
