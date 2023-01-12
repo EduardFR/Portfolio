@@ -5,7 +5,7 @@ import ContactName from "./ContactName";
 import ContactSendButton from "./ContactSendButton";
 
 const ContactInputGroupStyle = styled.div`
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   row-gap: 32px;

@@ -8,7 +8,7 @@ const FooterStyle = styled.div`
 
 function Footer() {
   return (
-    <FooterStyle>
+    <FooterStyle id="footer">
       <FooterContainer />
     </FooterStyle>
   );

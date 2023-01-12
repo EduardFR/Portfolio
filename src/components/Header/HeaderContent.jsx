@@ -13,26 +13,38 @@ const HeaderContentStyle = styled.div`
   align-items: start;
   max-width: 709px;
   text-align: left;
+  @media ${(props) => props.theme.media.phone} {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const HeaderTitleStyle = styled.h1`
   margin-bottom: 43px;
+  @media ${(props) => props.theme.media.phone} {
+    margin-bottom: 24px;
+  }
 `;
 
 const HeaderTextStyle = styled.p`
   max-width: 445px;
   margin-bottom: 66px;
+  @media ${(props) => props.theme.media.phone} {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
 `;
 
 function HeaderContent() {
   return (
     <HeaderContentStyle>
       <HeaderTitleStyle>
-        Nice to meet you! I’m <InsertStyle>Adam Keyes.</InsertStyle>
+        Nice to meet you! I’m <InsertStyle>Eduard Frost.</InsertStyle>
       </HeaderTitleStyle>
       <HeaderTextStyle>
-        Based in the UK, I’m a front-end developer passionate about building
-        accessible web apps that users love.
+        Based in the Tbilisi, I’m a front-end developer and I'm looking for my
+        first job.
       </HeaderTextStyle>
       <ButtonContact />
     </HeaderContentStyle>

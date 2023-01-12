@@ -376,6 +376,10 @@ module.exports = function (webpackEnv) {
                 },
               },
             },
+            // {
+            //   test: /\.(png|jpg|jpeg|gif)$/i,
+            //   type: "asset/resource",
+            // },
             {
               test: /\.svg$/,
               use: [

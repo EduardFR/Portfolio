@@ -5,6 +5,12 @@ const NavigationStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  @media ${(props) => props.theme.media.phone} {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding-bottom: 10px;
+  }
 `;
 
 const MyNameStyle = styled.h3`
@@ -15,7 +21,7 @@ const MyNameStyle = styled.h3`
 function FooterNavigation() {
   return (
     <NavigationStyle>
-      <MyNameStyle>adamkeys</MyNameStyle>
+      <MyNameStyle>edfrost</MyNameStyle>
       <Icons />
     </NavigationStyle>
   );

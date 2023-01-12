@@ -23,7 +23,7 @@ const ContactNameStyle = styled.input`
 `;
 
 function ContactName() {
-  return <ContactNameStyle type="text" placeholder="NAME" />;
+  return <ContactNameStyle id="contact" type="text" placeholder="NAME" />;
 }
 
 export default ContactName;

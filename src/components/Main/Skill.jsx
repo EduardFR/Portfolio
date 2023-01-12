@@ -3,11 +3,11 @@ import styled from "styled-components";
 const SkillStyle = styled.h2``;
 const TextStyle = styled.p``;
 
-function Skill() {
+function Skill({ name, experience }) {
   return (
     <SkillStyle>
-      HTML
-      <TextStyle>2 Years Experience</TextStyle>
+      {name}
+      <TextStyle>{experience} Experience</TextStyle>
     </SkillStyle>
   );
 }

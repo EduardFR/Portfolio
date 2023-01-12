@@ -19,6 +19,7 @@ const TwitterStyle = styled(TwitterSVG)`
 `;
 
 const LinkedInStyle = styled(LinkedInSVG)`
+  display: none;
   cursor: pointer;
   :hover {
     fill: var(--color-Green);
@@ -26,26 +27,40 @@ const LinkedInStyle = styled(LinkedInSVG)`
 `;
 
 const FrontendmentorStyle = styled(FrontendmentorSVG)`
+  display: none;
   cursor: pointer;
   :hover {
     fill: var(--color-Green);
   }
 `;
 
+const LinkStyle = styled.a``;
+
 const IconsStyle = styled.div`
   display: flex;
   align-items: baseline;
   column-gap: 32px;
   margin-right: 30px;
+  @media ${(props) => props.theme.media.phone} {
+    margin-right: 0px;
+  }
 `;
 
 function Icons() {
   return (
     <IconsStyle>
-      <GitStyle />
-      <FrontendmentorStyle />
-      <LinkedInStyle />
-      <TwitterStyle />
+      <LinkStyle target="_blank" href="https://github.com/EduardFR">
+        <GitStyle />
+      </LinkStyle>
+      <LinkStyle>
+        <FrontendmentorStyle />
+      </LinkStyle>
+      <LinkStyle>
+        <LinkedInStyle />
+      </LinkStyle>
+      <LinkStyle target="_blank" href="https://twitter.com/KatochiL">
+        <TwitterStyle />
+      </LinkStyle>
     </IconsStyle>
   );
 }

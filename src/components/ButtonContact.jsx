@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
-const ButtonContactStyle = styled.button`
+const ButtonContactStyle = styled.a`
   display: inline-block;
   height: 38px;
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 2.28px;
-  background: none;
-  border: none;
+  text-decoration: none;
   border-bottom: solid 2px var(--color-Green);
   cursor: pointer;
   color: var(--color-White);
@@ -18,7 +17,7 @@ const ButtonContactStyle = styled.button`
 `;
 
 function ButtonContact() {
-  return <ButtonContactStyle>CONTACT ME</ButtonContactStyle>;
+  return <ButtonContactStyle href="#footer">CONTACT ME</ButtonContactStyle>;
 }
 
 export default ButtonContact;

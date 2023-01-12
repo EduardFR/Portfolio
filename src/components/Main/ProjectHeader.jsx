@@ -6,6 +6,9 @@ const ProjectHeaderStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
+  @media ${(props) => props.theme.media.phone} {
+    margin-bottom: 40px;
+  }
 `;
 const HeaderTitleStyle = styled.h1``;
 

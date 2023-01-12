@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 const ProjectSkillsStyle = styled.div`
   display: flex;
+  column-gap: 20px;
+  @media ${(props) => props.theme.media.phone} {
+    margin-bottom: 20px;
+  }
 `;
 
-const SkillStyle = styled.p`
-  margin-right: 20px;
-`;
+const SkillStyle = styled.p``;
 
-function ProjectSkills() {
+function ProjectSkills({ skills }) {
   return (
     <ProjectSkillsStyle>
-      <SkillStyle>HTML</SkillStyle>
-      <SkillStyle>CSS</SkillStyle>
+      {skills.map((skill) => (
+        <SkillStyle key={skill.id}>{skill.skill}</SkillStyle>
+      ))}
     </ProjectSkillsStyle>
   );
 }
