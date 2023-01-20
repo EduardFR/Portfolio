@@ -1,5 +1,5 @@
 import ProjectScrin from "../assets/ProjectScrin.jpeg";
-import ProjectMultiStepForm from "../assets/ProjectMultiStepForm.jpg";
+import ProjectMultiStepForm from "../assets/ProjectMultiStepForm.png";
 
 export const projects = [
   {
