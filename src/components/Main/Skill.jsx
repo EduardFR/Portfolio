@@ -7,7 +7,7 @@ function Skill({ name, experience }) {
   return (
     <SkillStyle>
       {name}
-      <TextStyle>{experience} Experience</TextStyle>
+      <TextStyle>{experience} </TextStyle>
     </SkillStyle>
   );
 }

@@ -43,8 +43,7 @@ function HeaderContent() {
         Nice to meet you! I’m <InsertStyle>Eduard Frost.</InsertStyle>
       </HeaderTitleStyle>
       <HeaderTextStyle>
-        Based in the Tbilisi, I’m a front-end developer and I'm looking for my
-        first job.
+        I’m a front-end developer and I'm looking for my first job.
       </HeaderTextStyle>
       <ButtonContact />
     </HeaderContentStyle>

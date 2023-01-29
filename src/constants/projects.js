@@ -1,5 +1,6 @@
 import ProjectScrin from "../assets/ProjectScrin.jpeg";
 import ProjectMultiStepForm from "../assets/ProjectMultiStepForm.png";
+import GeneratePassword from "../assets/GeneratePassword.png";
 
 export const projects = [
   {
@@ -49,6 +50,31 @@ export const projects = [
       {
         id: "4",
         skill: "Redux",
+      },
+    ],
+  },
+  {
+    ID: "3",
+    url: `${GeneratePassword}`,
+    name: "Password Generator",
+    linkToCode: "https://github.com/EduardFR/password-generator-app.git",
+    linkToProject: "https://password-generator-app-ten.vercel.app",
+    skills: [
+      {
+        id: "1",
+        skill: "HTML",
+      },
+      {
+        id: "2",
+        skill: "Styled-Components",
+      },
+      {
+        id: "3",
+        skill: "React",
+      },
+      {
+        id: "4",
+        skill: "TypeScript",
       },
     ],
   },
