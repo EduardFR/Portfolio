@@ -39,12 +39,20 @@ function ProjectLinks({ linkCode, linkProject }) {
   console.log(linkCode);
   return (
     <ProjectLinksStyle>
-      <LinkStyle target="_blank" href={linkProject}>
-        VIEW PROJECT
-      </LinkStyle>
-      <LinkStyle target="_blank" href={linkCode}>
-        VIEW CODE
-      </LinkStyle>
+      {linkProject ? (
+        <LinkStyle target="_blank" href={linkProject}>
+          VIEW PROJECT
+        </LinkStyle>
+      ) : (
+        ""
+      )}
+      {linkCode ? (
+        <LinkStyle target="_blank" href={linkCode}>
+          VIEW CODE
+        </LinkStyle>
+      ) : (
+        ""
+      )}
     </ProjectLinksStyle>
   );
 }

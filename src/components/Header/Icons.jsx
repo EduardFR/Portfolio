@@ -58,7 +58,7 @@ function Icons() {
       <LinkStyle>
         <LinkedInStyle />
       </LinkStyle>
-      <LinkStyle target="_blank" href="https://twitter.com/KatochiL">
+      <LinkStyle target="_blank" href="https://twitter.com/Frosted97">
         <TwitterStyle />
       </LinkStyle>
     </IconsStyle>
